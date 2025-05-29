@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PowerShell Labs with Images</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; color: #333; }
+        h1, h2 { color: #012456; }
+        .copy-container { margin: 10px 0; display: flex; align-items: center; gap: 10px; }
+        .copy-input {
+            flex-grow: 1; padding: 5px; font-family: monospace;
+            font-size: 1rem; border: 1px solid #ccc; border-radius: 5px; background-color: #f4f4f4;
+        }
+        .copy-button {
+            padding: 5px 10px; background-color: #012456; color: white;
+            border: none; border-radius: 5px; cursor: pointer;
+        }
+        .copy-button:hover { background-color: #0142a3; }
+        .lab-section { display: none; margin-top: 20px; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .lab-section.active { display: block; }
+        img { display: block; margin-top: 10px; max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>PowerShell Labs</h1>
+    <label for="labFilter"><strong>Select Lab:</strong></label>
+    <select id="labFilter" onchange="filterLabs()">
+        <option value="">-- Select --</option>
+<option value="Lab 1">Lab 1</option>
+<option value="Lab 2">Lab 2</option>
+<option value="Lab 3">Lab 3</option>
+<option value="Lab 4">Lab 4</option>
+</select>
+<section class="lab-section" data-lab="Lab 1">
+<h2>Lab 1</h2>
+<ol>
+<li>In your Amazon Workspace, click the ‘Search’ icon and type “PowerShell”.<div><img src="lab_images/Lab Images/Lab1-step1.png" alt="Lab1-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Choose the top choice “Windows PowerShell” and make it full screen.<div><img src="lab_images/Lab Images/Lab1-step2.png" alt="Lab1-step2.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Let’s run some commands. Note that we can only type and enter a command one line at a time.<div><img src="lab_images/Lab Images/Lab1-step3a.png" alt="Lab1-step3a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-Help" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    </li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-Alias" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    </li>
+<li>Close ‘Windows PowerShell’.</li>
+<li>Now let’s compare that to Windows PowerShell ISE!<div><img src="lab_images/Lab Images/Lab1-step5.png" alt="Lab1-step5.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>In your Amazon Workspace, click the “Search” icon and type “PowerShell”. Choose “Windows PowerShell ISE”.<div><img src="lab_images/Lab Images/Lab1-step6b.png" alt="Lab1-step6b.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>In the “Windows PowerShell ISE”, we’re going to turn on the script pane. Click ‘View’ > ‘Show Script Pane’.<div><img src="lab_images/Lab Images/Lab1-step7a.png" alt="Lab1-step7a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-Help" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-Alias" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-Help
+Get-Alias" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Close Windows PowerShell ISE.<div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+</ol>
+</section>
+<section class="lab-section" data-lab="Lab 2">
+<h2>Lab 2</h2>
+<ol>
+<li>Open Windows PowerShell (non-admin).<div><img src="lab_images/Lab Images/Lab2-step1.png" alt="Lab2-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-Process" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-ChildItem" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-Date" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Set-ExecutionPolicy –ExecutionPolicy Unrestricted" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Close Windows PowerShell.<div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Open Administrator: Windows PowerShell.<div><img src="lab_images/Lab Images/Lab2-step3a.png" alt="Lab2-step3a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    </li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    </li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Test-Path "C:\Program Files\Newfolder"" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    </li>
+</ol>
+</section>
+<section class="lab-section" data-lab="Lab 3">
+<h2>Lab 3</h2>
+<ol>
+<li>Open Windows PowerShell.<div><img src="lab_images/Lab Images/Lab3-step1.png" alt="Lab3-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$var1 = "Hello, PowerShell"" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$var2 = 100" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$var3 = $true" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$var1" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$var2" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$var3" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$var1.GetType()" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$var2.GetType()" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$var3.GetType()" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$Combined = $var1 + " " + $var2" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Write-Output "Combined Variable: $Combined"" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$HTMCourses = @("HTM117", "HTM213", "HTM311")" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Write-Output $HTMCourses[2]" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$user = @{LastName="Jeter"; FirstName="Kevin"; Email="kevin.jeter@va.gov"}" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Write-Output $user["Email"]" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+</ol>
+</section>
+<section class="lab-section" data-lab="Lab 4">
+<h2>Lab 4</h2>
+<ol>
+<li>Open Windows PowerShell.<div><img src="lab_images/Lab Images/Lab4-step1.png" alt="Lab4-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Open File Explorer and navigate to the “UserProfile (D:)” drive.<div><img src="lab_images/Lab Images/Lab4-step2.png" alt="Lab4-step2.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="New-Item -Path D:\LabTest -ItemType Directory -Force" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="New-Item -Path D:\LabTest\testfile.txt -ItemType File -Force" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value=""Hello, PowerShell" | Out-File D:\LabTest\testfile.txt" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Rename-Item -Path D:\LabTest\testfile.txt -NewName newfile.txt -Force" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Move-Item -Path D:\LabTest
+ewfile.txt -Destination D:\Users -Force" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Remove-Item -Path D:\LabTest -Recurse -Force" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Open PowerShell ISE.<div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="New-Item -Path "D:\LabFiles" -ItemType Directory" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="New-Item -Path "D:\LabFiles\Source" -ItemType Directory" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="New-Item -Path "D:\LabFiles\Destination" -ItemType Directory" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Set-Content -Path "D:\LabFiles\Source\ExampleFile.txt" -Value "This is a test file"" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$source = "D:\LabFiles\Source\ExampleFile.txt"" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="$destination = "D:\LabFiles\Destination\ExampleFile.txt"" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="if (Test-Path $source) {
+    # Code to move file will go here
+} else {
+    Write-Host "Error moving source file: $source"
+}" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li><p><strong>Run:</strong></p>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Move-Item –Path $source -Destination $destination -Force
+Write-Host "File moved successfully from $source to $destination"" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+</ol>
+</section>
+
+<script>
+function filterLabs() {
+    var selected = document.getElementById("labFilter").value;
+    document.querySelectorAll(".lab-section").forEach(section => {
+        section.classList.remove("active");
+        if (section.dataset.lab === selected) {
+            section.classList.add("active");
+        }
+    });
+}
+
+function copyToClipboard(button) {
+    const container = button.closest('.copy-container');
+    const input = container.querySelector('.copy-input');
+    input.select();
+    input.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(input.value).then(() => {
+        button.textContent = 'Copied!';
+        setTimeout(() => { button.textContent = 'Copy'; }, 2000);
+    });
+}
+</script>
+</body>
+</html>
