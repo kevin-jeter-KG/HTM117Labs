@@ -20,6 +20,7 @@
         .lab-section { display: none; margin-top: 20px; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         .lab-section.active { display: block; }
         img { display: block; margin-top: 10px; max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px; }
+        .footer {background-color: #012456; color: white; text-align: center;padding: 15px 0;margin-top: 40px; }
     </style>
 </head>
 <body>
@@ -27,13 +28,13 @@
     <label for="labFilter"><strong>Select Lab:</strong></label>
     <select id="labFilter" onchange="filterLabs()">
         <option value="">----Select----</option>
-<option value="User Guide">User Guide</option>
+<option value="User Guide" selected>User Guide</option>
 <option value="Lab 1">Lab 1</option>
 <option value="Lab 2">Lab 2</option>
 <option value="Lab 3">Lab 3</option>
 <option value="Lab 4">Lab 4</option>
 </select>
-<section class="lab-section" data-lab="User Guide">
+<section class="lab-section active" data-lab="User Guide">
 <h2> User Guide for HTM117: PowerShell Fundamentals Labs</h2>
 <ol>
 <br>You've successfully found the labs for HTM117: PowerShell Fundamentals! So how do you use these? Follow these instructions! <br> <br>
@@ -49,6 +50,8 @@
 <section class="lab-section" data-lab="Lab 1">
 <h2>Lab 1</h2>
 <ol>
+<br> <em>//Get familiar with the different PowerShell environments and run basic commands on your Windows Operating System (Whether it’s Windows Server or Windows Desktop). </em>
+<br><br>
 <li>In your Amazon Workspace, click the ‘Search’ icon and type “PowerShell”.<div><img src="lab_images/Lab Images/Lab1-step1.png" alt="Lab1-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li>Choose the top choice “Windows PowerShell” and make it full screen.<div><img src="lab_images/Lab Images/Lab1-step2.png" alt="Lab1-step2.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li>Let’s run some commands. Note that we can only type and enter a command one line at a time.<br>
@@ -113,58 +116,72 @@
 <section class="lab-section" data-lab="Lab 2">
 <h2>Lab 2</h2>
 <ol>
-<li>Open Windows PowerShell (non-admin).<div><img src="lab_images/Lab Images/Lab2-step1.png" alt="Lab2-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+<br> <em>//This lab demonstrates how certain commands behave differently depending on user privilege levels. Students run commands in standard and administrator PowerShell sessions and note the difference in results and permissions. </em>
+<br><br>
+<li>In your Amazon Workspace, open Windows PowerShell.
+    <br><img src="lab_images/Lab Images/Lab2-step1.png" alt="Lab2-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+<li>Let’s run some commands.<em>Note, you’re running these commands as a <strong>non-admin</strong>.</em>
+    <br>a. In the ‘Windows PowerShell Window”, type Get-Process and press the Enter key
+    <br>&emsp;<em>The Get-Process command shows all running processes on the machine</em>
+    <br><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Process" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>b. In the ‘Windows PowerShell Window”, type Get-ChildItem and press the Enter key.
+    <br>&emsp;<em>The Get-ChildItem displays the items and child items in one or more specified locations.</em>
+    <br><img src="lab_images/Lab Images/Lab2-step2ai.png" alt="Lab2-step2ai.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-ChildItem" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>c. In the ‘Windows PowerShell Window”, type Get-Date and press the Enter key
+    <br>&emsp;<em>We're displaying the current date and time!</em>
+    <br><img src="lab_images/Lab Images/Lab2-step2b.png" alt="Lab2-step2b.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Date" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>d. In the ‘Windows PowerShell Window”, type Set-ExecutionPolicy – ExecutionPolicy Unrestricted and press the Enter key. 
+    <br>&emsp;<em>Reminder: Although the commands are NOT case sensitive, spaces between commands and parameters must be enforced or you will receive errors when trying to run the command.</em>
+    <br><img src="lab_images/Lab Images/Lab2-step2c.png" alt="Lab2-step2c.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="Set-ExecutionPolicy –ExecutionPolicy Unrestricted" readonly>
+        <input type="text" class="copy-input" value="Set-ExecutionPolicy – ExecutionPolicy Unrestricted" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
-    </div>
-    <div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    </div>&emsp;<em>Uh-oh! We don't have permissions to do that!</em></li>
+<li>Now let’s try to create a folder with our <strong>non-admin</strong> PowerShell! 
+    <br>a. In the ‘Windows PowerShell Window”, type New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab2-step3a.png" alt="Lab2-step3a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory" readonly>
+        <input type="text" class="copy-input" value='New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
-    </div>
-    <div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li>Close Windows PowerShell.<div><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li>Open Administrator: Windows PowerShell.<div><img src="lab_images/Lab Images/Lab2-step3a.png" alt="Lab2-step3a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
-    <div class="copy-container">
-        <input type="text" class="copy-input" value="Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
-    </div>
-    </li>
-<li><p><strong>Run:</strong></p>
-    <div class="copy-container">
-        <input type="text" class="copy-input" value="New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
-    </div>
-    </li>
-<li><p><strong>Run:</strong></p>
-    <div class="copy-container">
-        <input type="text" class="copy-input" value="Test-Path "C:\Program Files\Newfolder"" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
-    </div>
-    </li>
+    </div>&emsp;<em>Uh-oh! We don't have permissions to do that!</em></li>
+<li>Close your Windows PowerShell Session</li>
+<li>In order to run these commands that are restricted, we need to open an Admin PowerShell Session.
+    <br>a. In your Amazon Workspace, click the ‘Search’ icon and type “PowerShell”
+    <br>b. <strong><em>RIGHT CLICK</em></strong> "Windows PowerShell"
+    <br>c. Choose "Run as administrator" and click "Yes"
+    <br><img src="lab_images/Lab Images/Lab2-step5.png" alt="Lab2-step5.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Your Window now reads “Administrator: Windows PowerShell.” Let’s run some commands!
+    <br>a. In the ‘Administrator: Windows PowerShell” window, type Get-Process and press the Enter key
+    <br>&emsp;<em>Note that the outputs are EXACTLY the same as without running as administrator.</em>
+    <br><img src="lab_images/Lab Images/Lab2-step6a.png" alt="Lab2-step6a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br>b. In the ‘Windows PowerShell Window”, type Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned and press the Enter key
+    <br>&emsp;i. Type in 'y' and press the Enter Key
+    <br><em>Note that there’s no error! We NEED the administrator window for this to work</em>
+    <br><img src="lab_images/Lab Images/Lab2-step6b.png" alt="Lab2-step6b.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br>c. In the ‘Windows PowerShell Window”, type New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory and press the Enter key
+    <br><em>Again, note that there’s no error! We NEED the administrator window for this to work</em>
+    <br><img src="lab_images/Lab Images/Lab2-step6c.png" alt="Lab2-step6c.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br>d. Let’s test to make sure the new folder actually got created. In the ‘Windows PowerShell Window”, type Test-Path "C:\Program Files\Newfolder” and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab2-step6ci.png" alt="Lab2-step6ci.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 </ol>
+<br> <br> <strong> Congratulations! You completed Lab 2!</strong>
 </section>
 <section class="lab-section" data-lab="Lab 3">
 <h2>Lab 3</h2>
@@ -383,5 +400,8 @@ function copyToClipboard(button) {
     });
 }
 </script>
+<footer class="footer">
+    © 2025 Department of Veterans Affairs. All rights reserved.
+</footer>
 </body>
 </html>
