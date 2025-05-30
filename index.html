@@ -26,12 +26,26 @@
     <h1>HTM117: PowerShell Fundamental Labs</h1>
     <label for="labFilter"><strong>Select Lab:</strong></label>
     <select id="labFilter" onchange="filterLabs()">
-        <option value="">-- Select --</option>
+        <option value="">----Select----</option>
+<option value="User Guide">User Guide</option>
 <option value="Lab 1">Lab 1</option>
 <option value="Lab 2">Lab 2</option>
 <option value="Lab 3">Lab 3</option>
 <option value="Lab 4">Lab 4</option>
 </select>
+<section class="lab-section" data-lab="User Guide">
+<h2> User Guide for HTM117: PowerShell Fundamentals Labs</h2>
+<ol>
+<br>You've successfully found the labs for HTM117: PowerShell Fundamentals! So how do you use these? Follow these instructions! <br> <br>
+<li>Are you accessing this via Amazon Workspaces? If not, access this site via FireFox in your AWS or follow these steps to log in
+    <br>&emsp;a. Navigate to <a href="https://us-east-1.webclient.amazonworkspaces.com/login" target="_blank">Amazon Workspaces</a>
+    <br>&emsp;b. Enter your registration code, username, and password found on the Excel Spreadsheet distributed in class
+    <br>&emsp;c. Open Firefox and type this URL in to pull the labs up.</li>
+<li>Using the dropdown above, select the lab you want to complete.</li>
+<li>As you work through the labs, use the "Copy" button to copy and paste commands directly into your PowerShell Window</li>
+<br> <br> Comments, Questions, Concerns, or General Feedback? Let us know at <a href="https://kevin-jeter-kg.github.io/" target="'_blank">this Survey!</a>
+</ol>
+</section>
 <section class="lab-section" data-lab="Lab 1">
 <h2>Lab 1</h2>
 <ol>
@@ -88,7 +102,7 @@
     <div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
 <br><strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="Get-Help Get-Alias " readonly>
+        <input type="text" class="copy-input" value="Get-Help Get-Alias" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
 </li>
