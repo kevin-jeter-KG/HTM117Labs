@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PowerShell Labs with Images</title>
+    <title>HTM117: PowerShell Fundamental Labs</title>
     <style>
         body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; color: #333; }
         h1, h2 { color: #012456; }
@@ -23,7 +23,7 @@
     </style>
 </head>
 <body>
-    <h1>PowerShell Labs</h1>
+    <h1>HTM117: PowerShell Fundamental Labs</h1>
     <label for="labFilter"><strong>Select Lab:</strong></label>
     <select id="labFilter" onchange="filterLabs()">
         <option value="">-- Select --</option>
@@ -37,43 +37,63 @@
 <ol>
 <li>In your Amazon Workspace, click the ‘Search’ icon and type “PowerShell”.<div><img src="lab_images/Lab Images/Lab1-step1.png" alt="Lab1-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li>Choose the top choice “Windows PowerShell” and make it full screen.<div><img src="lab_images/Lab Images/Lab1-step2.png" alt="Lab1-step2.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li>Let’s run some commands. Note that we can only type and enter a command one line at a time.<div><img src="lab_images/Lab Images/Lab1-step3a.png" alt="Lab1-step3a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+<li>Let’s run some commands. Note that we can only type and enter a command one line at a time.<br>
+&emsp;a. In the “Windows PowerShell Window”, type Get-Help and press the Enter/Return key.<br>
+&emsp;<em>Hint: Get-Help is a PowerShell command that displays help information about PowerShell commands and concepts. PowerShell Help describes PowerShell cmdlets, functions, scripts, and modules, and explains concepts, including the elements of the PowerShell language</em></li>
+    <img src="lab_images/Lab Images/Lab1-step3a.png" alt="Lab1-step3a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"><br>
+&emsp;<strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Help" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
     </li>
-<li><p><strong>Run:</strong></p>
+<br><p>&emsp;b. In the “Windows PowerShell Window”, type Get-Alias and press the Enter key.
+<br>&emsp;<em>Hint: The Get-Alias command provides a list of pre-defined aliases for commands that you can enter in place of the full command names (ex. You can type TNC instead of writing out the Test-NetConnection command, allowing you to save time in the console)</em><br>
+    <img src="lab_images/Lab Images/Lab1-step3b.png" alt="Lab1-step3b.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div><br>
+    <strong>Run:</strong>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-Alias" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+    </p>
+    </li>
+<li>Close ‘Windows PowerShell’.</li><br><br>
+<li>Now let’s compare that to Windows PowerShell ISE! <br>In your Amazon Workspace, click the “Search” icon and type “PowerShell”. Choose “Windows PowerShell ISE”.<div><img src="lab_images/Lab Images/Lab1-step5.png" alt="Lab1-step5.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>In the “Windows PowerShell ISE”, we’re going to turn on the script pane.<div>
+<br>&emsp;a. Click 'View'
+<br>&emsp;b. Click 'Show Script Pane'
+<br><img src="lab_images/Lab Images/Lab1-step6b.png" alt="Lab1-step6b.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Let’s run some commands. <em>Hint: Note how it displays and interacts differently than Windows PowerShell Console!</em>
+<br>&emsp; a. In the white box at the top, type Get-Help. Click on the green ‘Play’ button in the task bar to run the command. 
+<br>&emsp; &emsp;<em>Note: it may take up to 30 seconds for the play button to become available, just be patient!</em>
+<br><img src="lab_images/Lab Images/Lab1-step7a.png" alt="Lab1-step7a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+<br><strong>Run:</strong>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-Help" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+<br>&emsp;b. In the white box at the top, delete the Get-Help command and type Get-Alias. Click on the green ‘Play’ button in the task bar to run the command.
+<br><img src="lab_images/Lab Images/Lab1-step7b.png" alt="Lab1-step7b.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+<br><strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Alias" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
     </li>
-<li>Close ‘Windows PowerShell’.</li>
-<li>Now let’s compare that to Windows PowerShell ISE!<div><img src="lab_images/Lab Images/Lab1-step5.png" alt="Lab1-step5.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li>In your Amazon Workspace, click the “Search” icon and type “PowerShell”. Choose “Windows PowerShell ISE”.<div><img src="lab_images/Lab Images/Lab1-step6b.png" alt="Lab1-step6b.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li>In the “Windows PowerShell ISE”, we’re going to turn on the script pane. Click ‘View’ > ‘Show Script Pane’.<div><img src="lab_images/Lab Images/Lab1-step7a.png" alt="Lab1-step7a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+<li>With Windows PowerShell ISE, we can run multiple lines of commands. to do so,
+<br>&emsp; a. In the white box at the top, type Get-Help and press the Enter/Return key. Then type, Get-Alias
+<br>&emsp; b. Click on the green 'Play' button in the task bar to run the command.
+<br>&emsp; c. Scroll up in the bottom blue area and note that both commands ran successfully!
+    <br>
+    <div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+<br><strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="Get-Help" readonly>
+        <input type="text" class="copy-input" value="Get-Help Get-Alias " readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
-    <div class="copy-container">
-        <input type="text" class="copy-input" value="Get-Alias" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
-    </div>
-    <div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
-    <div class="copy-container">
-        <input type="text" class="copy-input" value="Get-Help
-Get-Alias" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
-    </div>
-    <div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li>Close Windows PowerShell ISE.<div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+</li>
+<li>Close Windows PowerShell ISE.
+<br> <br> <strong> Congratulations! You completed Lab 1!</strong>
 </ol>
 </section>
 <section class="lab-section" data-lab="Lab 2">
