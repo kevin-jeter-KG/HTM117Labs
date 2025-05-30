@@ -173,112 +173,154 @@
     <br>a. In the ‘Administrator: Windows PowerShell” window, type Get-Process and press the Enter key
     <br>&emsp;<em>Note that the outputs are EXACTLY the same as without running as administrator.</em>
     <br><img src="lab_images/Lab Images/Lab2-step6a.png" alt="Lab2-step6a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Get-Process" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
     <br>b. In the ‘Windows PowerShell Window”, type Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned and press the Enter key
     <br>&emsp;i. Type in 'y' and press the Enter Key
     <br><em>Note that there’s no error! We NEED the administrator window for this to work</em>
     <br><img src="lab_images/Lab Images/Lab2-step6b.png" alt="Lab2-step6b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value="Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned" readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
     <br>c. In the ‘Windows PowerShell Window”, type New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory and press the Enter key
     <br><em>Again, note that there’s no error! We NEED the administrator window for this to work</em>
     <br><img src="lab_images/Lab Images/Lab2-step6c.png" alt="Lab2-step6c.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value='New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory' readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div>
     <br>d. Let’s test to make sure the new folder actually got created. In the ‘Windows PowerShell Window”, type Test-Path "C:\Program Files\Newfolder” and press the Enter key
-    <br><img src="lab_images/Lab Images/Lab2-step6ci.png" alt="Lab2-step6ci.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <br><img src="lab_images/Lab Images/Lab2-step6ci.png" alt="Lab2-step6ci.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
+    <div class="copy-container">
+        <input type="text" class="copy-input" value='Test-Path "C:\Program Files\Newfolder"' readonly>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+    </div></li>
 </ol>
 <br> <br> <strong> Congratulations! You completed Lab 2!</strong>
 </section>
 <section class="lab-section" data-lab="Lab 3">
 <h2>Lab 3</h2>
 <ol>
+<br><em>//What’s the purpose of this lab? Practice fundamental and practical commands related to variable creation, assignment, data types, and manipulation.</em>
+<br><br>
 <li>Open Windows PowerShell.<div><img src="lab_images/Lab Images/Lab3-step1.png" alt="Lab3-step1.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+<li>Let’s write create and assign some variables!
+    <br>a. In the ‘Windows PowerShell Window”, type $var1 = “Hello, PowerShell”  and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$var1 = "Hello, PowerShell"" readonly>
+        <input type="text" class="copy-input" value='$var1 = "Hello, PowerShell"' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>b. In the ‘Windows PowerShell Window”, type $var2 = 100  and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step2b.png" alt="Lab3-step2b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$var2 = 100" readonly>
+        <input type="text" class="copy-input" value='$var2 = 100' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>c. In the ‘Windows PowerShell Window”, type $var3 = $true  and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step2c.png" alt="Lab3-step2c.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$var3 = $true" readonly>
+        <input type="text" class="copy-input" value='$var3 = $true' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+</li>
+<li>Now let’s test to see if our variables were assigned correctly!
+    <br>a. In the ‘Windows PowerShell Window”, type $var1  and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step3a.png" alt="Lab3-step3a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$var1" readonly>
+        <input type="text" class="copy-input" value='$var1' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>b. In the ‘Windows PowerShell Window”, type $var2  and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step3b.png" alt="Lab3-step3b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$var2" readonly>
+        <input type="text" class="copy-input" value='$var2' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>c. In the ‘Windows PowerShell Window”, type $var3  and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step3c.png" alt="Lab3-step3c.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$var3" readonly>
+        <input type="text" class="copy-input" value='$var3' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+</li>
+<li>Let’s see what data-type PowerShell automatically assigned to our variables.
+    <br>a. In the ‘Windows PowerShell Window”, type $var1.GetType() and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step3d.png" alt="Lab3-step3d.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$var1.GetType()" readonly>
+        <input type="text" class="copy-input" value='$var1.GetType()' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>a. In the ‘Windows PowerShell Window”, type $var2.GetType() and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step3e.png" alt="Lab3-step3e.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$var2.GetType()" readonly>
+        <input type="text" class="copy-input" value='$var2.GetType()' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>a. In the ‘Windows PowerShell Window”, type $var3.GetType() and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step3f.png" alt="Lab3-step3f.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <strong>Run:</strong>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$var3.GetType()" readonly>
+        <input type="text" class="copy-input" value='$var3.GetType()' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+</li>
+<li>Let’s try combining variables! 
+    <br>a. In the ‘Windows PowerShell Window”, type $Combined = $var1 + “ “ + $var2 and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step4a.png" alt="Lab3-step4a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$Combined = $var1 + " " + $var2" readonly>
+        <input type="text" class="copy-input" value='$Combined = $var1 + “ “ + $var2' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>b. Let’s see our new variable with a text prefix. Type Write-Output “Combined Variable: $Combined”  and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step4b.png" alt="Lab3-step4b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="Write-Output "Combined Variable: $Combined"" readonly>
+        <input type="text" class="copy-input" value='Write-Output “Combined Variable: $Combined”' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+</li>
+<li>Now let’s assign some more complex variable types. We’ll create an array and hash table!
+    <br>a. In the ‘Windows PowerShell Window”, type $HTMCourses = @(“HTM117”, “HTM213”, “HTM311”) and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step5a.png" alt="Lab3-step5a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$HTMCourses = @("HTM117", "HTM213", "HTM311")" readonly>
+        <input type="text" class="copy-input" value='$HTMCourses = @(“HTM117”, “HTM213”, “HTM311”)' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>b. Now let’s query the array! In the ‘Windows PowerShell Window”, type Write-Output $HTMCourses[2] and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step5b.png" alt="Lab3-step5b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="Write-Output $HTMCourses[2]" readonly>
+        <input type="text" class="copy-input" value='Write-Output $HTMCourses[2]' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>c. In the ‘Windows PowerShell Window”, type $user = @{LastName=”Jeter”; FirstName=”Kevin”; Email=”kevin.jeter@va.gov”} and press the Enter key
+    <br><img src="lab_images/Lab Images/Lab3-step5c.png" alt="Lab3-step5c.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="$user = @{LastName="Jeter"; FirstName="Kevin"; Email="kevin.jeter@va.gov"}" readonly>
+        <input type="text" class="copy-input" value='$user = @{LastName=”Jeter”; FirstName=”Kevin”; Email=”kevin.jeter@va.gov”}' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li><p><strong>Run:</strong></p>
+    <br>d. Now let’s query the hash table! In the ‘Windows PowerShell Window”, type Write-Output $user[“Email”]and press the Enter
+    <br><img src="lab_images/Lab Images/Lab3-step5d.png" alt="Lab3-step5d.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <div class="copy-container">
-        <input type="text" class="copy-input" value="Write-Output $user["Email"]" readonly>
+        <input type="text" class="copy-input" value='Write-Output $user[“Email”]' readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+</li>
+<br> <br> <strong> Congratulations! You completed Lab 3!</strong>
 </ol>
 </section>
 <section class="lab-section" data-lab="Lab 4">
