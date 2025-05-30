@@ -19,7 +19,7 @@
         .copy-button:hover { background-color: #0142a3; }
         .lab-section { display: none; margin-top: 20px; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         .lab-section.active { display: block; }
-        img { display: block; margin-top: 10px; max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px; }
+        img { display: block; margin-top: 10px; max-width: 80%; height: auto; border: 1px solid #ccc; border-radius: 4px; }
         .header {background-color: #012456; color: white; text-align: center; padding: 15px 0; margin-bottom: 40px; border-radius: 8px;}
         .header h1 {color: white;}
         .footer {background-color: #012456; color: white; text-align: center;padding: 15px 0;margin-top: 40px; }
@@ -54,12 +54,12 @@
 <ol>
 <br> <em>//Get familiar with the different PowerShell environments and run basic commands on your Windows Operating System (Whether it’s Windows Server or Windows Desktop). </em>
 <br><br>
-<li>In your Amazon Workspace, click the ‘Search’ icon and type “PowerShell”.<div><img src="lab_images/Lab Images/Lab1-step1.png" alt="Lab1-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li>Choose the top choice “Windows PowerShell” and make it full screen.<div><img src="lab_images/Lab Images/Lab1-step2.png" alt="Lab1-step2.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>In your Amazon Workspace, click the ‘Search’ icon and type “PowerShell”.<div><img src="lab_images/Lab Images/Lab1-step1.png" alt="Lab1-step1.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Choose the top choice “Windows PowerShell” and make it full screen.<div><img src="lab_images/Lab Images/Lab1-step2.png" alt="Lab1-step2.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li>Let’s run some commands. Note that we can only type and enter a command one line at a time.<br>
 &emsp;a. In the “Windows PowerShell Window”, type Get-Help and press the Enter/Return key.<br>
 &emsp;<em>Hint: Get-Help is a PowerShell command that displays help information about PowerShell commands and concepts. PowerShell Help describes PowerShell cmdlets, functions, scripts, and modules, and explains concepts, including the elements of the PowerShell language</em></li>
-    <img src="lab_images/Lab Images/Lab1-step3a.png" alt="Lab1-step3a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"><br>
+    <img src="lab_images/Lab Images/Lab1-step3a.png" alt="Lab1-step3a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"><br>
 &emsp;<strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Help" readonly>
@@ -68,7 +68,7 @@
     </li>
 <br><p>&emsp;b. In the “Windows PowerShell Window”, type Get-Alias and press the Enter key.
 <br>&emsp;<em>Hint: The Get-Alias command provides a list of pre-defined aliases for commands that you can enter in place of the full command names (ex. You can type TNC instead of writing out the Test-NetConnection command, allowing you to save time in the console)</em><br>
-    <img src="lab_images/Lab Images/Lab1-step3b.png" alt="Lab1-step3b.png" style="max-width:90%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div><br>
+    <img src="lab_images/Lab Images/Lab1-step3b.png" alt="Lab1-step3b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div><br>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Alias" readonly>
@@ -77,7 +77,7 @@
     </p>
     </li>
 <li>Close ‘Windows PowerShell’.</li><br><br>
-<li>Now let’s compare that to Windows PowerShell ISE! <br>In your Amazon Workspace, click the “Search” icon and type “PowerShell”. Choose “Windows PowerShell ISE”.<div><img src="lab_images/Lab Images/Lab1-step5.png" alt="Lab1-step5.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Now let’s compare that to Windows PowerShell ISE! <br>In your Amazon Workspace, click the “Search” icon and type “PowerShell”. Choose “Windows PowerShell ISE”.<div><img src="lab_images/Lab Images/Lab1-step5.png" alt="Lab1-step5.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li>In the “Windows PowerShell ISE”, we’re going to turn on the script pane.<div>
 <br>&emsp;a. Click 'View'
 <br>&emsp;b. Click 'Show Script Pane'
@@ -85,14 +85,14 @@
 <li>Let’s run some commands. <em>Hint: Note how it displays and interacts differently than Windows PowerShell Console!</em>
 <br>&emsp; a. In the white box at the top, type Get-Help. Click on the green ‘Play’ button in the task bar to run the command. 
 <br>&emsp; &emsp;<em>Note: it may take up to 30 seconds for the play button to become available, just be patient!</em>
-<br><img src="lab_images/Lab Images/Lab1-step7a.png" alt="Lab1-step7a.png" style="max-width:70%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+<br><img src="lab_images/Lab Images/Lab1-step7a.png" alt="Lab1-step7a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
 <br><strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Help" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
 <br>&emsp;b. In the white box at the top, delete the Get-Help command and type Get-Alias. Click on the green ‘Play’ button in the task bar to run the command.
-<br><img src="lab_images/Lab Images/Lab1-step7b.png" alt="Lab1-step7b.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+<br><img src="lab_images/Lab Images/Lab1-step7b.png" alt="Lab1-step7b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
 <br><strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Alias" readonly>
@@ -104,7 +104,7 @@
 <br>&emsp; b. Click on the green 'Play' button in the task bar to run the command.
 <br>&emsp; c. Scroll up in the bottom blue area and note that both commands ran successfully!
     <br>
-    <div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <div><img src="lab_images/Lab Images/Lab1-step8a.png" alt="Lab1-step8a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
 <br><strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Help Get-Alias" readonly>
@@ -121,11 +121,11 @@
 <br> <em>//This lab demonstrates how certain commands behave differently depending on user privilege levels. Students run commands in standard and administrator PowerShell sessions and note the difference in results and permissions. </em>
 <br><br>
 <li>In your Amazon Workspace, open Windows PowerShell.
-    <br><img src="lab_images/Lab Images/Lab2-step1.png" alt="Lab2-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br><img src="lab_images/Lab Images/Lab2-step1.png" alt="Lab2-step1.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
 <li>Let’s run some commands.<em>Note, you’re running these commands as a <strong>non-admin</strong>.</em>
     <br>a. In the ‘Windows PowerShell Window”, type Get-Process and press the Enter key
     <br>&emsp;<em>The Get-Process command shows all running processes on the machine</em>
-    <br><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br><img src="lab_images/Lab Images/Lab2-step2a.png" alt="Lab2-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Process" readonly>
@@ -133,7 +133,7 @@
     </div>
     <br>b. In the ‘Windows PowerShell Window”, type Get-ChildItem and press the Enter key.
     <br>&emsp;<em>The Get-ChildItem displays the items and child items in one or more specified locations.</em>
-    <br><img src="lab_images/Lab Images/Lab2-step2ai.png" alt="Lab2-step2ai.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br><img src="lab_images/Lab Images/Lab2-step2ai.png" alt="Lab2-step2ai.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-ChildItem" readonly>
@@ -141,7 +141,7 @@
     </div>
     <br>c. In the ‘Windows PowerShell Window”, type Get-Date and press the Enter key
     <br>&emsp;<em>We're displaying the current date and time!</em>
-    <br><img src="lab_images/Lab Images/Lab2-step2b.png" alt="Lab2-step2b.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br><img src="lab_images/Lab Images/Lab2-step2b.png" alt="Lab2-step2b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Date" readonly>
@@ -149,7 +149,7 @@
     </div>
     <br>d. In the ‘Windows PowerShell Window”, type Set-ExecutionPolicy – ExecutionPolicy Unrestricted and press the Enter key. 
     <br>&emsp;<em>Reminder: Although the commands are NOT case sensitive, spaces between commands and parameters must be enforced or you will receive errors when trying to run the command.</em>
-    <br><img src="lab_images/Lab Images/Lab2-step2c.png" alt="Lab2-step2c.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br><img src="lab_images/Lab Images/Lab2-step2c.png" alt="Lab2-step2c.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Set-ExecutionPolicy – ExecutionPolicy Unrestricted" readonly>
@@ -157,7 +157,7 @@
     </div>&emsp;<em>Uh-oh! We don't have permissions to do that!</em></li>
 <li>Now let’s try to create a folder with our <strong>non-admin</strong> PowerShell! 
     <br>a. In the ‘Windows PowerShell Window”, type New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory and press the Enter key
-    <br><img src="lab_images/Lab Images/Lab2-step3a.png" alt="Lab2-step3a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br><img src="lab_images/Lab Images/Lab2-step3a.png" alt="Lab2-step3a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory' readonly>
@@ -168,198 +168,198 @@
     <br>a. In your Amazon Workspace, click the ‘Search’ icon and type “PowerShell”
     <br>b. <strong><em>RIGHT CLICK</em></strong> "Windows PowerShell"
     <br>c. Choose "Run as administrator" and click "Yes"
-    <br><img src="lab_images/Lab Images/Lab2-step5.png" alt="Lab2-step5.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <br><img src="lab_images/Lab Images/Lab2-step5.png" alt="Lab2-step5.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li>Your Window now reads “Administrator: Windows PowerShell.” Let’s run some commands!
     <br>a. In the ‘Administrator: Windows PowerShell” window, type Get-Process and press the Enter key
     <br>&emsp;<em>Note that the outputs are EXACTLY the same as without running as administrator.</em>
-    <br><img src="lab_images/Lab Images/Lab2-step6a.png" alt="Lab2-step6a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br><img src="lab_images/Lab Images/Lab2-step6a.png" alt="Lab2-step6a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <br>b. In the ‘Windows PowerShell Window”, type Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned and press the Enter key
     <br>&emsp;i. Type in 'y' and press the Enter Key
     <br><em>Note that there’s no error! We NEED the administrator window for this to work</em>
-    <br><img src="lab_images/Lab Images/Lab2-step6b.png" alt="Lab2-step6b.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br><img src="lab_images/Lab Images/Lab2-step6b.png" alt="Lab2-step6b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <br>c. In the ‘Windows PowerShell Window”, type New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory and press the Enter key
     <br><em>Again, note that there’s no error! We NEED the administrator window for this to work</em>
-    <br><img src="lab_images/Lab Images/Lab2-step6c.png" alt="Lab2-step6c.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
+    <br><img src="lab_images/Lab Images/Lab2-step6c.png" alt="Lab2-step6c.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <br>d. Let’s test to make sure the new folder actually got created. In the ‘Windows PowerShell Window”, type Test-Path "C:\Program Files\Newfolder” and press the Enter key
-    <br><img src="lab_images/Lab Images/Lab2-step6ci.png" alt="Lab2-step6ci.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <br><img src="lab_images/Lab Images/Lab2-step6ci.png" alt="Lab2-step6ci.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 </ol>
 <br> <br> <strong> Congratulations! You completed Lab 2!</strong>
 </section>
 <section class="lab-section" data-lab="Lab 3">
 <h2>Lab 3</h2>
 <ol>
-<li>Open Windows PowerShell.<div><img src="lab_images/Lab Images/Lab3-step1.png" alt="Lab3-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Open Windows PowerShell.<div><img src="lab_images/Lab Images/Lab3-step1.png" alt="Lab3-step1.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$var1 = "Hello, PowerShell"" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$var2 = 100" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$var3 = $true" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$var1" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$var2" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$var3" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$var1.GetType()" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$var2.GetType()" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$var3.GetType()" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$Combined = $var1 + " " + $var2" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Write-Output "Combined Variable: $Combined"" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$HTMCourses = @("HTM117", "HTM213", "HTM311")" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Write-Output $HTMCourses[2]" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$user = @{LastName="Jeter"; FirstName="Kevin"; Email="kevin.jeter@va.gov"}" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Write-Output $user["Email"]" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab3-step2a.png" alt="Lab3-step2a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 </ol>
 </section>
 <section class="lab-section" data-lab="Lab 4">
 <h2>Lab 4</h2>
 <ol>
-<li>Open Windows PowerShell.<div><img src="lab_images/Lab Images/Lab4-step1.png" alt="Lab4-step1.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li>Open File Explorer and navigate to the “UserProfile (D:)” drive.<div><img src="lab_images/Lab Images/Lab4-step2.png" alt="Lab4-step2.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Open Windows PowerShell.<div><img src="lab_images/Lab Images/Lab4-step1.png" alt="Lab4-step1.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Open File Explorer and navigate to the “UserProfile (D:)” drive.<div><img src="lab_images/Lab Images/Lab4-step2.png" alt="Lab4-step2.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="New-Item -Path D:\LabTest -ItemType Directory -Force" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="New-Item -Path D:\LabTest\testfile.txt -ItemType File -Force" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value=""Hello, PowerShell" | Out-File D:\LabTest\testfile.txt" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Rename-Item -Path D:\LabTest\testfile.txt -NewName newfile.txt -Force" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Move-Item -Path D:\LabTest
 ewfile.txt -Destination D:\Users -Force" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Remove-Item -Path D:\LabTest -Recurse -Force" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
-<li>Open PowerShell ISE.<div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+<li>Open PowerShell ISE.<div><img src="lab_images/Lab Images/Lab4-step3.png" alt="Lab4-step3.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="New-Item -Path "D:\LabFiles" -ItemType Directory" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="New-Item -Path "D:\LabFiles\Source" -ItemType Directory" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="New-Item -Path "D:\LabFiles\Destination" -ItemType Directory" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Set-Content -Path "D:\LabFiles\Source\ExampleFile.txt" -Value "This is a test file"" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$source = "D:\LabFiles\Source\ExampleFile.txt"" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="$destination = "D:\LabFiles\Destination\ExampleFile.txt"" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="if (Test-Path $source) {
@@ -369,14 +369,14 @@ ewfile.txt -Destination D:\Users -Force" readonly>
 }" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 <li><p><strong>Run:</strong></p>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Move-Item –Path $source -Destination $destination -Force
 Write-Host "File moved successfully from $source to $destination"" readonly>
         <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
-    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:100%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
+    <div><img src="lab_images/Lab Images/Lab4-step4a.png" alt="Lab4-step4a.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div></li>
 </ol>
 </section>
 
