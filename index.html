@@ -65,7 +65,6 @@
 &emsp;<strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Help" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
     </div>
     </li>
 <br><p>&emsp;b. In the "Windows PowerShell Window", type Get-Alias and press the Enter key.
@@ -74,7 +73,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Alias" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     </p>
     </li>
@@ -91,14 +90,14 @@
 <br><strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Help" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
 <br>&emsp;b. In the white box at the top, delete the <mark style="background-color: lightgreen">Get-Help</mark> command and type <mark style="background-color: lightgreen">Get-Alias</mark>. Click on the green ‘Play’ button in the task bar to run the command.
 <br><img src="lab_images/Lab Images/Lab1-step7b.png" alt="Lab1-step7b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
 <br><strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Alias" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     </li>
 <li>With Windows PowerShell ISE, we can run multiple lines of commands. to do so,
@@ -110,7 +109,7 @@
 <br><strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Help Get-Alias" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
 </li>
 <li>Close Windows PowerShell ISE.
@@ -132,7 +131,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Process" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>b. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">Get-ChildItem</mark> and press the Enter key.
     <br>&emsp;<em>The Get-ChildItem displays the items and child items in one or more specified locations.</em>
@@ -140,7 +139,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-ChildItem" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>c. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">Get-Date</mark> and press the Enter key
     <br>&emsp;<em>We're displaying the current date and time!</em>
@@ -148,7 +147,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Date" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>d. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">Set-ExecutionPolicy – ExecutionPolicy Unrestricted</mark> and press the Enter key. 
     <br>&emsp;<em>Reminder: Although the commands are NOT case sensitive, spaces between commands and parameters must be enforced or you will receive errors when trying to run the command.</em>
@@ -156,7 +155,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Set-ExecutionPolicy – ExecutionPolicy Unrestricted" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>&emsp;<em>Uh-oh! We don't have permissions to do that!</em></li>
 <li>Now let’s try to create a folder with our <strong>non-admin</strong> PowerShell! 
     <br>a. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory</mark> and press the Enter key
@@ -164,7 +163,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>&emsp;<em>Uh-oh! We don't have permissions to do that!</em></li>
 <li>Close your Windows PowerShell Session</li>
 <li>In order to run these commands that are restricted, we need to open an Admin PowerShell Session.
@@ -179,7 +178,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Get-Process" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>b. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned</mark> and press the Enter key
     <br>&emsp;i. Type in 'y' and press the Enter Key
@@ -188,7 +187,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value="Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned" readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>c. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory</mark> and press the Enter key
     <br><em>Again, note that there’s no error! We NEED the administrator window for this to work</em>
@@ -196,14 +195,14 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='New-Item –Path "C:\Program Files\Newfolder" -ItemType Directory' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>d. Let’s test to make sure the new folder actually got created. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">Test-Path "C:\Program Files\Newfolder"</mark> and press the Enter key
     <br><img src="lab_images/Lab Images/Lab2-step6ci.png" alt="Lab2-step6ci.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='Test-Path "C:\Program Files\Newfolder"' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div></li>
 </ol>
 <br> <br> <strong> Congratulations! You completed Lab 2!</strong>
@@ -221,21 +220,21 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$var1 = "Hello, PowerShell"' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>b. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">$var2 = 100</mark>  and press the Enter key
     <br><img src="lab_images/Lab Images/Lab3-step2b.png" alt="Lab3-step2b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$var2 = 100' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>c. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">$var3 = $true</mark>  and press the Enter key
     <br><img src="lab_images/Lab Images/Lab3-step2c.png" alt="Lab3-step2c.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$var3 = $true' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
 </li>
 <li>Now let’s test to see if our variables were assigned correctly!
@@ -244,21 +243,21 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$var1' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>b. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">$var2</mark>  and press the Enter key
     <br><img src="lab_images/Lab Images/Lab3-step3b.png" alt="Lab3-step3b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$var2' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>c. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">$var3</mark>  and press the Enter key
     <br><img src="lab_images/Lab Images/Lab3-step3c.png" alt="Lab3-step3c.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$var3' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
 </li>
 <li>Let’s see what data-type PowerShell automatically assigned to our variables.
@@ -267,21 +266,21 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$var1.GetType()' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>a. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">$var2.GetType()</mark> and press the Enter key
     <br><img src="lab_images/Lab Images/Lab3-step3e.png" alt="Lab3-step3e.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$var2.GetType()' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>a. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">$var3.GetType()</mark> and press the Enter key
     <br><img src="lab_images/Lab Images/Lab3-step3f.png" alt="Lab3-step3f.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$var3.GetType()' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
 </li>
 <li>Let’s try combining variables! 
@@ -290,14 +289,14 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$Combined = $var1 + " " + $var2' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>b. Let’s see our new variable with a text prefix. Type <mark style="background-color: lightgreen">Write-Output "Combined Variable: $Combined"</mark>  and press the Enter key
     <br><img src="lab_images/Lab Images/Lab3-step4b.png" alt="Lab3-step4b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='Write-Output "Combined Variable: $Combined"' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
 </li>
 <li>Now let’s assign some more complex variable types. We’ll create an array and hash table!
@@ -306,28 +305,28 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$HTMCourses = @("HTM117", "HTM213", "HTM311")' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>b. Now let’s query the array! In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">Write-Output $HTMCourses[2]</mark> and press the Enter key
     <br><img src="lab_images/Lab Images/Lab3-step5b.png" alt="Lab3-step5b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='Write-Output $HTMCourses[2]' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>c. In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">$user = @{LastName="Jeter"; FirstName="Kevin"; Email="kevin.jeter@va.gov"}</mark> and press the Enter key
     <br><img src="lab_images/Lab Images/Lab3-step5c.png" alt="Lab3-step5c.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='$user = @{LastName="Jeter"; FirstName="Kevin"; Email="kevin.jeter@va.gov"}' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>d. Now let’s query the hash table! In the ‘Windows PowerShell Window", type <mark style="background-color: lightgreen">Write-Output $user["Email"]</mark> and press the Enter
     <br><img src="lab_images/Lab Images/Lab3-step5d.png" alt="Lab3-step5d.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='Write-Output $user["Email"]' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
 </li>
 <br> <br> <strong> Congratulations! You completed Lab 3!</strong>
@@ -350,7 +349,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='New-Item -Path D:\LabTest -ItemType Directory -Force' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div></li>
 <li>Let's create a text file inside the folder “LabTest” and then add some text to the file.
     <br>a. In the ‘Windows PowerShell Window”, type <mark style="background-color: lightgreen">New-Item -Path D:\LabTest\testfile.txt -ItemType File -Force</mark> and press the Enter key.
@@ -359,7 +358,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='New-Item -Path D:\LabTest\testfile.txt -ItemType File -Force' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>b. To write text in the file, type <mark style="background-color: lightgreen">“Hello, PowerShell” | Out-File D:\LabTest\testfile.txt</mark> and press the Enter key. If you open the text file, you can see the text written in!
     <br>&emsp; <em>Hint: the | is Shift + \ (Hold shift and press the backslash)</em>
@@ -367,7 +366,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='“Hello, PowerShell” | Out-File D:\LabTest\testfile.txt' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div></li>
 <li>Let's rename the file and move it to a new folder!
     <br>a. In the ‘Windows PowerShell Window”, type <mark style="background-color: lightgreen">Rename-Item -Path D:\LabTest\testfile.txt -NewName newfile.txt -Force</mark> and press the Enter key. Verify the new name in the folder!
@@ -375,14 +374,14 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='Rename-Item -Path D:\LabTest\testfile.txt -NewName newfile.txt -Force' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div>
     <br>b. Now let’s move the file to D:\Users. Type <mark style="background-color: lightgreen">Move-Item -Path D:\LabTest\newfile.txt -Destination D:\Users -Force</mark> and press the Enter key. Verify the file moved to the folder!
     <br><img src="lab_images/Lab Images/Lab4-step5b.png" alt="Lab4-step5b.png" style="max-width:80%; margin-top:10px; border:1px solid #ccc; border-radius:5px;"></div>
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='Move-Item -Path D:\LabTest\newfile.txt -Destination D:\Users -Force' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div></li>
 <li>To finish, we'll delete the original directory
     <br>a. Type <mark style="background-color: lightgreen">Remove-Item -Path D:\LabTest -Recurse -Force</mark>  and press the Enter key. Verify the folder has been removed! 
@@ -390,7 +389,7 @@
     <strong>Run:</strong>
     <div class="copy-container">
         <input type="text" class="copy-input" value='Remove-Item -Path D:\LabTest -Recurse -Force' readonly>
-        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+        
     </div></li>
 <br>
 <li><em>That was fun! But typing and executing each command separately can get annoying and cumbersome. Let’s use PowerShell ISE to complete multiple steps at once.</em>Close PowerShell and Open PowerShell ISE.  
